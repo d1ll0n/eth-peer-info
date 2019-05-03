@@ -20,7 +20,10 @@
     "src",
     "dist"
   ],
-  "repository": "github:d1llon/eth-peer-info",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d1ll0n/eth-peer-info"
+  },
   "keywords": [
     "IPFS"
   ],
