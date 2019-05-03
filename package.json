@@ -1,8 +1,7 @@
 {
-  "name": "peer-info",
-  "version": "0.15.1",
+  "name": "eth-peer-info",
+  "version": "0.0.1",
   "description": "IPFS Peer abstraction JavaScript implementation",
-  "leadMaintainer": "Pedro Teixeira <i@pgte.me>",
   "main": "src/index.js",
   "scripts": {
     "lint": "aegir lint",
@@ -21,7 +20,7 @@
     "src",
     "dist"
   ],
-  "repository": "github:libp2p/js-peer-info",
+  "repository": "github:d1llon/eth-peer-info",
   "keywords": [
     "IPFS"
   ],
@@ -30,8 +29,8 @@
     "npm": ">=6.0.0"
   },
   "license": "MIT",
-  "bugs": "https://github.com/libp2p/js-peer-info/issues",
-  "homepage": "https://github.com/libp2p/js-peer-info",
+  "bugs": "https://github.com/d1ll0n/eth-peer-info/issues",
+  "homepage": "https://github.com/d1ll0n/eth-peer-info",
   "devDependencies": {
     "aegir": "^18.2.2",
     "buffer-loader": "0.1.0",
@@ -40,9 +39,9 @@
     "dirty-chai": "^2.0.1"
   },
   "dependencies": {
+    "eth-peer-id": "0.0.1",
     "mafmt": "^6.0.7",
     "multiaddr": "^6.0.6",
-    "peer-id": "~0.12.2",
     "unique-by": "^1.0.0"
   },
   "contributors": [

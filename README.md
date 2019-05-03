@@ -1,45 +1,34 @@
 # js-peer-info
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://protocol.ai)
-[![](https://img.shields.io/badge/project-libp2p-yellow.svg?style=flat-square)](http://libp2p.io/)
-[![](https://img.shields.io/badge/freenode-%23libp2p-yellow.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23libp2p)
-[![Discourse posts](https://img.shields.io/discourse/https/discuss.libp2p.io/posts.svg)](https://discuss.libp2p.io)
-[![](https://img.shields.io/codecov/c/github/libp2p/js-peer-info.svg?style=flat-square)](https://codecov.io/gh/libp2p/js-peer-info)
-[![](https://img.shields.io/travis/libp2p/js-peer-info.svg?style=flat-square)](https://travis-ci.com/libp2p/js-peer-info)
-[![Dependency Status](https://david-dm.org/libp2p/js-peer-info.svg?style=flat-square)](https://david-dm.org/libp2p/js-peer-info)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
-![](https://img.shields.io/badge/npm-%3E%3D3.0.0-orange.svg?style=flat-square)
-![](https://img.shields.io/badge/Node.js-%3E%3D6.0.0-orange.svg?style=flat-square)
+> Fork of [peer-id](https://github.com/libp2p/js-peer-id/) where id is a sha3 hash of an Ethereum address.
 
 ## Lead Maintainer
 
-[Pedro Teixeira](https://github.com/pgte)
+[Dillon Kellar](https://github.com/d1ll0n)
 
 ## Table of Contents
 
-- [Installation](#installation)
-  - [npm](#npm)
-  - [Node.JS, Browserify, Webpack](#nodejs-browserify-webpack)
-  - [Browser: `<script>` Tag](#browser-script-tag)
-- [Usage](#usage)
-- [API](#api)
-  - [`PeerInfo.create([id, ] callback)`](#peerinfocreateid-callback)
-  - [`new PeerInfo(id)`](#new-peerinfoid)
-  - [`.connect(ma)`](#connectma)
-  - [`.disconnect()`](#connectma)
-  - [`.isConnected()`](#connectma)
-  - [`.multiaddrs`](#multiaddrs)
-  - [`.multiaddrs.add(addr)`](#multiaddraddaddr)
-  - [`.multiaddrs.addSafe(addr)`](#multiaddraddsafeaddr)
-  - [`.multiaddrs.forEach(fn)`](#multiaddrforeachfn)
-  - [`.multiaddrs.size`](#multiaddrsize)
-  - [`.multiaddrs.has()`](#multiaddrhas)
-  - [`.multiaddrs.delete(addr)`](#multiaddrdeleteaddr)
-  - [`.multiaddrs.toArray()`](#multiaddrtoarray)
-  - [`.multiaddrs.replace(existing, fresh)`](#multiaddrreplaceexisting-fresh)
-  - [`.multiaddrs.distinct()`](#distinct)
-- [Contribute](#contribute)
-- [License](#license)
+- [js-peer-info](#js-peer-info)
+  - [Lead Maintainer](#lead-maintainer)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+    - [npm](#npm)
+    - [Node.JS, Browserify, Webpack](#nodejs-browserify-webpack)
+    - [Browser: `<script>` Tag](#browser-script-tag)
+  - [Usage](#usage)
+  - [API](#api)
+    - [`PeerInfo.create([id, ] callback)`](#peerinfocreateid--callback)
+    - [`new PeerInfo(id)`](#new-peerinfoid)
+    - [`protocols`](#protocols)
+    - [`.protocols.add(protocol)`](#protocolsaddprotocol)
+    - [`.protocols.delete(protocol)`](#protocolsdeleteprotocol)
+    - [`multiaddrs`](#multiaddrs)
+    - [`.multiaddrs.add(addr)`](#multiaddrsaddaddr)
+    - [`.multiaddrs.addSafe(addr)`](#multiaddrsaddsafeaddr)
+    - [`.multiaddrs.delete(addr)`](#multiaddrsdeleteaddr)
+    - [`.multiaddrs.replace(existing, fresh)`](#multiaddrsreplaceexisting-fresh)
+  - [Contribute](#contribute)
+  - [License](#license)
 
 ## Installation
 
