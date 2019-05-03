@@ -42,7 +42,7 @@
     "dirty-chai": "^2.0.1"
   },
   "dependencies": {
-    "eth-peer-id": "0.0.1",
+    "eth-peer-id": "0.0.2",
     "mafmt": "^6.0.7",
     "multiaddr": "^6.0.6",
     "unique-by": "^1.0.0"
